@@ -1,1 +1,4 @@
-
+blog/venv
+blog/media_root
+blog/static_root
+.idea
