@@ -22,8 +22,8 @@ from post.views import index, blog, post
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', index),
-    path('blog/', blog),
-    path('post/', post),
+    path('blog/', blog, name='post-list'),
+    path('post/<id>', post, name='post-detail'),
 ]
 
 if settings.DEBUG:
